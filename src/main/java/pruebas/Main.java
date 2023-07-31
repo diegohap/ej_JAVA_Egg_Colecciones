@@ -4,6 +4,10 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        HashSet<Perro> razas = new HashSet<>();
+        razas.add(new Perro(2, "firulais"));
+        razas.add(new Perro(2, "firulais"));
+
         HashMap<Integer, String> alumnos = new HashMap<>();
         alumnos.put(2, "augusto");alumnos.put(3, "zito");
         alumnos.put(1, "pancho");

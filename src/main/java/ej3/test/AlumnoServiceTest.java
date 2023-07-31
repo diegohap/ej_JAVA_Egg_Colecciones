@@ -1,7 +1,7 @@
 package ej3.test;
 
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 class AlumnoServiceTest {
 

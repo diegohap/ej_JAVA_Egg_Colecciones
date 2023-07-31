@@ -1,6 +1,7 @@
 package pruebas;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Perro implements Comparable<Perro>{
     private Integer edad;
@@ -37,6 +38,18 @@ public class Perro implements Comparable<Perro>{
         }
     };
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Perro perro = (Perro) o;
+        return Objects.equals(edad, perro.edad) && Objects.equals(nombre, perro.nombre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(edad, nombre);
+    }
 
     @Override
     public int compareTo(Perro o) {
