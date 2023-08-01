@@ -52,7 +52,7 @@ public class AlumnoService {
             for (Integer n : oAlumno.get().getNotas()) {
                 suma += n;
             }
-            return Optional.of(suma / 3);
+            return Optional.of(suma / Alumno.CANT_NOTAS_MAX);
         }
         return Optional.empty();
     }

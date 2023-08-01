@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class Alumno {
     private String nombre;
     private ArrayList<Integer> notas;
-    private final Integer CANT_NOTAS_MAX = 3;
+    public static final Integer CANT_NOTAS_MAX = 3;
 
     public Alumno(String nombre) {
         this.nombre = nombre;
