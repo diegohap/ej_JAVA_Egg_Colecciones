@@ -14,7 +14,7 @@ public class Main {
         ProductService ps = new ProductService();
         Integer op = 1;
 
-        while (op !=6){
+        while (op != 6){
             menu();
             op = teclado.nextInt();
             switch (op) {
