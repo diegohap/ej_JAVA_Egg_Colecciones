@@ -1,9 +1,6 @@
 package eje4.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Comparator;
 
@@ -11,14 +8,15 @@ import java.util.Comparator;
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 public class Ciudad {
     private String name;
     private Integer cp;
 
-    public Comparator<Ciudad> compararByName = new Comparator<Ciudad>() {
+    public static Comparator<Ciudad> compararByName = new Comparator<Ciudad>() {
         @Override
         public int compare(Ciudad o1, Ciudad o2) {
-            return 0;
+            return o1.getName().compareTo(o2.getName());
         }
     };
 }
